@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.image.Image?>
+<VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ImageDisplayController">
+   <children>
+      <Pane prefHeight="648.0" prefWidth="1160.0">
+         <children>
+            <StackPane fx:id="stackPane" prefHeight="654.0" prefWidth="1157.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="640.0" fitWidth="1156.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </StackPane>
+         </children>
+      </Pane>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="84.0" prefWidth="1160.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#moveLeft" prefHeight="70.0" prefWidth="80.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="moveleft.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#zoomOut" prefHeight="70.0" prefWidth="80.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="narrow.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="slideButton" mnemonicParsing="false" onAction="#slide" prefHeight="70.0" prefWidth="80.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="start.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#zoomIn" prefHeight="70.0" prefWidth="80.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" >
+                     <image>
+                        <Image url="enlarge.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+          <Button mnemonicParsing="false" onAction="#moveRight" prefHeight="70.0" prefWidth="80.0">
+             <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0">
+                   <image>
+                      <Image url="moveright.png"/>
+                   </image>
+                </ImageView>
+             </graphic>
+          </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

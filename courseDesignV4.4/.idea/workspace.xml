@@ -36,6 +36,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "shared-indexes",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -68,10 +69,16 @@
       <option name="presentableId" value="Default" />
       <updated>1710242176375</updated>
       <workItem from="1710242178303" duration="364000" />
+      <workItem from="1710245526951" duration="64000" />
+      <workItem from="1710245660750" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
