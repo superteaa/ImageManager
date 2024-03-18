@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a041f4d4-f467-45d9-95a1-d757b6b38cc5" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/.idea/courseDesignV4.4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/.idea/courseDesignV4.4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/out/production/courseDesign/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/out/production/courseDesign/主窗口布局图.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/out/production/courseDesign/展示窗口.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/out/production/courseDesign/展示窗口.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/DFSLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/DFSLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/FileTreeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/FileTreeItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/ImageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/ImageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/SelectedObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/SelectedObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/TreeViewNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/bean/TreeViewNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/AlertDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/AlertDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/DisplayWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/DisplayWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/ImageBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/ImageBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/RightBtnMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/RightBtnMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/ThumbnailBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/component/ThumbnailBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/controller/ImageDisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/controller/ImageDisplayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/map/ControllerMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/map/ControllerMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/utils/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/utils/ImageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/utils/U.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/java/sample/utils/U.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/resources/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/resources/主窗口布局图.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/main/resources/展示窗口.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/main/resources/展示窗口.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/src/test/java/OverlayLayout_Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/src/test/java/OverlayLayout_Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/target/classes/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/target/classes/主窗口布局图.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDesignV4.4/target/classes/展示窗口.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/courseDesignV4.4/target/classes/展示窗口.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2dqEP2IlTTbw76YGP4CmbNCKiyK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "chh",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a041f4d4-f467-45d9-95a1-d757b6b38cc5" name="更改" comment="" />
+      <created>1710727182796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710727182796</updated>
+    </task>
+    <servers />
+  </component>
+</project>
