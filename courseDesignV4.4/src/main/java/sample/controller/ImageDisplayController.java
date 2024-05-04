@@ -198,6 +198,9 @@ public class ImageDisplayController implements Initializable {
         setImage(imagePath);
     }
 
+    /*setImage(String imagePath): 这是一个公有方法，接受一个字符串参数imagePath，表示图像文件的路径。在方法内部，它首先创建一个新的Image对象，使用指定的图像路径。这个路径是通过拼接file:/和传入的imagePath得到的。
+
+            imageView.setImage(image): 接下来，通过imageView对象的setImage()方法将刚刚创建的Image对象设置为imageView的图像。*/
     public void setImage(String imagePath) {
         image = new Image("file:/" + imagePath);
 //        imageView = new ImageView();
@@ -211,6 +214,7 @@ public class ImageDisplayController implements Initializable {
     /**
      * 每次切换时，重置图片大小和位置
      */
+/*    这个 resetImage() 方法用于将 imageView 恢复到其默认状态。它首先将 X 和 Y 缩放比例都设置为 1.0，然后清除所有的变换。这样做会确保图像视图没有任何额外的变换，回到初始状态。*/
     private void resetImage() {
         imageView.setScaleX(1.0);
         imageView.setScaleY(1.0);
@@ -218,6 +222,7 @@ public class ImageDisplayController implements Initializable {
     }
 
 
+/*    这段代码定义了一个名为 slide() 的方法。如果 isPlaying 为真，则停止动画并将按钮图标设置为“start”，否则初始化图片并开始动画，将按钮图标设置为“end”。最后，切换 isPlaying 的值以反映当前播放状态。*/
     public void slide() {
         if (isPlaying) {
             animation.stop();

@@ -92,6 +92,11 @@ public class Controller implements Initializable {
         return selectedObj;
     }
 
+    /*这段代码是一个 JavaFX 控制器类中的 initialize() 方法。在 JavaFX 应用程序中，initialize() 方法是 Initializable 接口的一部分，用于在控制器初始化时执行一些初始化操作。
+
+在这个方法中，首先调用了 initThumbnailPane()、initSortBox()、initRectangle() 和 initFileTree() 方法，这些方法可能是用来初始化缩略图面板、排序框、矩形等组件或数据结构的。然后输出一条消息表示控制器加载完成。
+
+这段代码的作用是在控制器初始化时进行一些准备工作，包括初始化各种组件或数据，并且在完成后打印一条提示消息。*/
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         initThumbnailPane();
@@ -155,8 +160,10 @@ public class Controller implements Initializable {
     private void initRectangle() {
         pane = new Pane();
         rectangle = new Rectangle();
+        /*这行代码将 thumbnails 和 rectangle 这两个节点添加到 pane 的子节点列表中。这样做的结果是，在界面上，thumbnails 和 rectangle 这两个节点会被添加到 pane 上，并按照它们在代码中添加的顺序进行层叠显示。*/
         pane.getChildren().addAll(thumbnails, rectangle);
         scrollPane.setContent(pane);
+        /*这行代码将 rectangle 的可见性设置为 false，意味着即使矩形已经添加到 pane 中，它也不会显示在用户界面上。这常用于初始状态下不需要显示的元素，但可能在后续操作中（如用户交互后）变为可见。例如，这个矩形可能用于突出显示或标记用户选定的图像区域，但在程序初始化时并不需要立即显示。*/
         rectangle.setVisible(false);
     }
 
