@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0b8094e-ad22-4b5a-9058-95a9778266da" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/../readme.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/db_cnn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/logup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/test/java/img_backend/MainTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/OverlayLayout_Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/courseDesign/sin_monitor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/courseDesign/主窗口布局图.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/courseDesign/展示窗口.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OverlayLayout_Demo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,21 +45,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "shared-indexes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;通义灵码&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="应用程序.sample.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="D:\Program Files\Java\jdk-1.8\jre" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.sun.javaws.Main" />
+      <module name="courseDesignV4.4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OverlayLayout_Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OverlayLayout_Demo" />
+      <module name="courseDesign" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="courseDesign" />
       <extension name="coverage">
@@ -56,6 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.sample.Main" />
+        <item itemvalue="应用程序.OverlayLayout_Demo" />
         <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
@@ -71,6 +116,13 @@
       <workItem from="1710242178303" duration="364000" />
       <workItem from="1710245526951" duration="64000" />
       <workItem from="1710245660750" duration="52000" />
+      <workItem from="1710332417290" duration="197000" />
+      <workItem from="1710993828064" duration="256000" />
+      <workItem from="1711003847808" duration="1441000" />
+      <workItem from="1711111594695" duration="1008000" />
+      <workItem from="1714993107022" duration="703000" />
+      <workItem from="1715003111180" duration="989000" />
+      <workItem from="1715004944049" duration="624000" />
     </task>
     <servers />
   </component>
