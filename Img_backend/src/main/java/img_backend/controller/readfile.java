@@ -12,17 +12,21 @@ public class readfile {
 
     @PostMapping("/read")
     public List<String> readImageFiles(@RequestBody UserRequest userRequest) {
-        Path directoryPath = Paths.get(System.getProperty("user.dir"), userRequest.getUsername());
+        String baseUrl = "http://175.178.24.103:3388/pic/"; // 请替换<ip>和<port>为实际的IP地址和端口号
+        Path directoryPath = Paths.get(System.getProperty("user.dir"), "/pic", userRequest.getUsername());
         List<String> imageFiles = new ArrayList<>();
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(directoryPath, "*.{jpg,png}")) {
             for (Path entry : stream) {
-                imageFiles.add(entry.toString());
+                String fileName = entry.getFileName().toString();
+                String userUrl = baseUrl + userRequest.getUsername() + "/" + fileName;
+                imageFiles.add(userUrl);
             }
         } catch (IOException | DirectoryIteratorException e) {
             System.err.println("Error reading files: " + e.getMessage());
         }
         return imageFiles;
     }
+
 
     // 用户请求类
     static class UserRequest {
@@ -36,4 +40,5 @@ public class readfile {
             this.username = username;
         }
     }
+
 }

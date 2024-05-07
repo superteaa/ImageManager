@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.io.File;
 import java.sql.*;
 
 class LogupRequest {
@@ -66,6 +68,12 @@ public class logup {
                 pstm.setString(3, email);
                 int rs1 = pstm.executeUpdate();
                 if (rs1 > 0){
+                    // 在这里添加创建文件夹的代码
+                    File picDirectory = new File("./pic");
+                    File directory = new File(picDirectory, username);
+                    if (!directory.exists()){
+                        directory.mkdir();
+                    }
                     cnn.close();
                     return "success";
                 }

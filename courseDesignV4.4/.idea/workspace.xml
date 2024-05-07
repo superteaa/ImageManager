@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b8094e-ad22-4b5a-9058-95a9778266da" name="更改" comment="">
+    <list default="true" id="a0b8094e-ad22-4b5a-9058-95a9778266da" name="更改" comment="get local file">
+      <change afterPath="$PROJECT_DIR$/../Img_backend/pic/first/DSC00061.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Img_backend/first/微信图片_20240305191744.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/logup.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/logup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/readfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/readfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Img_backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Img_backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Img_backend/src/main/resources/static/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +113,16 @@
       <workItem from="1715003111180" duration="989000" />
       <workItem from="1715004944049" duration="1821000" />
       <workItem from="1715009962294" duration="10000" />
+      <workItem from="1715078625293" duration="2183000" />
     </task>
+    <task id="LOCAL-00001" summary="get local file">
+      <created>1715078708514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715078708514</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +138,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="get local file" />
+    <option name="LAST_COMMIT_MESSAGE" value="get local file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
