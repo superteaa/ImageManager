@@ -6,23 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0b8094e-ad22-4b5a-9058-95a9778266da" name="更改" comment="get local file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/bean/SelectedObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/bean/SelectedObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/component/ThumbnailBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/component/ThumbnailBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sample/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/主窗口布局图.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/component/ThumbnailBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/component/ThumbnailBox$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/component/ThumbnailBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/component/ThumbnailBox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/主窗口布局图.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox stylesheets="@index.css" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
     <children>
         <MenuBar VBox.vgrow="NEVER">
             <menus>
@@ -30,13 +30,13 @@
                             <font>
                                 <Font name="AlienCaret" size="21.0" />
                             </font>
-                            <!--<graphic>
+                            <graphic>
                                 <ImageView fitHeight="20.0" fitWidth="20.0" >
                                     <image>
                                         <Image url="show.png"/>
                                     </image>
                                 </ImageView>
-                            </graphic>-->
+                            </graphic>
                         </Button>
 
                     </children>
