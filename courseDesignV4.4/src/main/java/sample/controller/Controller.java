@@ -23,8 +23,11 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.TilePane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.FileChooser;
 import sample.bean.FileTreeItem;
 import sample.bean.ImageBean;
 import sample.bean.Point;
@@ -79,10 +82,20 @@ public class Controller implements Initializable {
 
     //当前目录
     private String path;
+    @FXML
+    public TextField imageLocation;
+
+    // 当用户点击按钮时调用此方法，选择图片并更新标签文本
+    @FXML
+
+    private void initPath(){
+        imageLocation.setText(" ");
+    }
 
     public String getPath() {
         return path;
     }
+
 
     public TilePane getThumbnails() {
         return thumbnails;
@@ -92,8 +105,10 @@ public class Controller implements Initializable {
         return selectedObj;
     }
 
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        initPath();
         initThumbnailPane();
         initSortBox();
         initRectangle();
@@ -288,20 +303,14 @@ public class Controller implements Initializable {
                         if (RightBtnMenu.getRightBtnMenu().isShowing()) {
                             RightBtnMenu.getRightBtnMenu().hide();
                         }
+
                     } else if (event.getButton() == MouseButton.SECONDARY) {
                         RightBtnMenu.getRightBtnMenu().show(scrollPane, event.getScreenX(), event.getScreenY());
                     }
             }
         });
-//
-//        thumbnails.setOnMouseClicked(new EventHandler<MouseEvent>() {
-//            @Override
-//            public void handle(MouseEvent event) {
-//                if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 1) {
-//                    selectedObj.clear();
-//                }
-//            }
-//        });
+
+
         thumbnails.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {

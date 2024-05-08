@@ -61,6 +61,7 @@ public class SelectedObj {
      */
     public void select(ThumbnailBox thumbnailBox) {
         thumbnailBox.getImageBox().setStyle("-fx-background-color:#55555550;-fx-border-color: #297ECE;");
+        thumbnailBox.showImagePath();//显示图片路径
         thumbnailBox.setSelected(true);
         thumbnailBoxList.add(thumbnailBox);
     }
@@ -70,6 +71,7 @@ public class SelectedObj {
      */
     public void unselect(ThumbnailBox thumbnailBox) {
         thumbnailBox.getImageBox().setStyle("-fx-border-color: #1e2f40;");
+        thumbnailBox.unshowImagePath();//图片未选中时，图片路径刷新，但是有bug
         thumbnailBox.setSelected(false);
         //遍历查找耗性能，但没能力优化了
         thumbnailBoxList.remove(thumbnailBox);

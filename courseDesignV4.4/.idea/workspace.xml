@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0b8094e-ad22-4b5a-9058-95a9778266da" name="更改" comment="get local file">
-      <change afterPath="$PROJECT_DIR$/../Img_backend/pic/first/DSC00061.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Img_backend/first/微信图片_20240305191744.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/logup.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/logup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/readfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Img_backend/src/main/java/img_backend/controller/readfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Img_backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Img_backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Img_backend/src/main/resources/static/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/bean/SelectedObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/bean/SelectedObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/component/ThumbnailBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/component/ThumbnailBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sample/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sample/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/主窗口布局图.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/bean/SelectedObj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/component/ThumbnailBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/component/ThumbnailBox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/component/ThumbnailBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/component/ThumbnailBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/主窗口布局图.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,22 +45,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;通义灵码&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="应用程序.sample.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="D:\Program Files\Java\jdk-1.8\jre" />
