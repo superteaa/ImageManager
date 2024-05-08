@@ -59,8 +59,8 @@ public class AlertDialog {
             case CREW:
                 alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setHeaderText("制作人员名单");
-                alert.setContentText("DarkRoom\n" + "\n"
-                                    + "by 黄成辉 梁昊 柯智威\n");
+                alert.setContentText("美图看看\n" + "\n"
+                                    + "by 张子杰 蔡鸿亨 黄锦城\n");
                 break;
             case ConfirmDeletion:
                 alert = new Alert(Alert.AlertType.CONFIRMATION);

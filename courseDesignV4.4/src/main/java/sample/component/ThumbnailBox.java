@@ -30,7 +30,7 @@ public class ThumbnailBox extends VBox {
     private ImageBox imageBox;
     private ImageBean imageBean;
     private Label imageLabel;//图片名
-    private boolean isSelected = false;//是否选中
+    public boolean isSelected = false;//是否选中
     private Tooltip tooltip;
     private RightBtnMenu rightBtnMenu;
 
@@ -128,6 +128,16 @@ public class ThumbnailBox extends VBox {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    public void showImagePath(){
+        Controller controller = (Controller) ControllerMap.get("Controller");
+        controller.imageLocation.setText(this.imageBean.getPath());
+    }
+
+    public void unshowImagePath(){
+        Controller controller = (Controller) ControllerMap.get("Controller");
+        controller.imageLocation.setText("");
     }
 
 }

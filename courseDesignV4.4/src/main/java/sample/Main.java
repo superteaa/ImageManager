@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import sample.controller.Controller;
 import sample.controller.ImageDisplayController;
@@ -21,15 +22,19 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(location);
         fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
-        Parent root = fxmlLoader.load();
+
+    Parent root = fxmlLoader.load();
         ControllerMap.put(fxmlLoader.getController());
-        primaryStage.setScene(new Scene(root));
+
+        Scene scene = new Scene(root);//
+        scene.setFill(Color.LIGHTBLUE);//刚改的，想改背景颜色，失败
+
+        primaryStage.setScene(scene);
         primaryStage.setResizable(false);
-        primaryStage.setTitle("DarkRoom");
+        primaryStage.setTitle("美图看看");
         System.out.println("打开预览窗口");
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

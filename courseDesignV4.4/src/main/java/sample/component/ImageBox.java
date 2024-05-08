@@ -14,7 +14,7 @@ public class ImageBox extends VBox {
     public ImageBox(ImageView imageView) {
         this.imageView = imageView;
         getChildren().add(imageView);
-        setStyle("-fx-border-color: #1e2f40;");
+        //setStyle("-fx-border-color: #1e2f40;");//缩略图黑色边框
         setAlignment(Pos.CENTER);
         setPrefWidth(200);
         setPrefHeight(200);
