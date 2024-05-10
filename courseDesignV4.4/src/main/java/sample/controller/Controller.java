@@ -33,9 +33,11 @@ import sample.bean.ImageBean;
 import sample.bean.Point;
 import sample.component.AlertDialog;
 import sample.component.DisplayWindow;
+import sample.component.Dialog;
 import sample.component.RightBtnMenu;
 import sample.bean.SelectedObj;
 import sample.component.ThumbnailBox;
+import sample.map.ControllerMap;
 import sample.utils.FileUtils;
 import sample.utils.ImageUtils;
 
@@ -274,7 +276,23 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * 点击删除图案
+     */
+    public void ImageDelete() {
+        selectedObj.delete();
+    }
 
+    /*
+    *  点击进入网盘
+    */
+    public void ImageWeb(){
+        try{
+            Dialog.showDialogWindow();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
 
     /**
      * 当框选时矩形出现

@@ -21,12 +21,30 @@
 
         <SplitPane orientation="VERTICAL" prefHeight="66.0" prefWidth="900.0">
             <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="73.0" prefWidth="898.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="73.0" prefWidth="898.0" style="-fx-background-color: LIGHTBLUE;">
                     <children>
-                        <TextField fx:id="imageLocation" layoutX="10.0" layoutY="21.0" prefWidth="618.0" text=""/>
-                        <ChoiceBox fx:id="sortBox" layoutX="638.0" layoutY="21.0" prefWidth="150.0" />
-                        <Separator layoutX="788.0" layoutY="9.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="27.0" />
-                        <Button layoutX="815.0" layoutY="7.0" mnemonicParsing="false" onAction="#imageDisplay" prefHeight="46.0" prefWidth="75.0">
+                        <TextField fx:id="imageLocation" layoutX="10.0" layoutY="21.0" prefWidth="550.0" text=""/>
+                        <ChoiceBox fx:id="sortBox" layoutX="566.0" layoutY="21.0" prefWidth="120.0" />
+                        <Separator layoutX="690.0" layoutY="9.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="27.0" />
+                        <Button layoutX="720.0" layoutY="10.0" mnemonicParsing="false" onAction="#ImageWeb" prefHeight="42.0" prefWidth="50.0">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" >
+                                    <image>
+                                        <Image url="disk.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button layoutX="780.0" layoutY="10.0" mnemonicParsing="false" onAction="#ImageDelete" prefHeight="42.0" prefWidth="50.0">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" >
+                                    <image>
+                                        <Image url="dustbin.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button layoutX="840.0" layoutY="10.0" mnemonicParsing="false" onAction="#imageDisplay" prefHeight="21.0" prefWidth="50.0">
                             <font>
                                 <Font name="AlienCaret" size="21.0" />
                             </font>
@@ -46,11 +64,11 @@
 
         <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" prefWidth="900.0" VBox.vgrow="ALWAYS">
             <items>
-                <AnchorPane prefWidth="221.0">
+                <AnchorPane prefWidth="221.0" >
                     <children>
                         <TreeView fx:id="tv_fileTree" layoutX="-3.0" layoutY="88.0" prefHeight="399.0" prefWidth="230.0" />
                         <Separator layoutX="14.0" layoutY="77.0" prefWidth="200.0" />
-                        <ImageView fx:id="fileImage" fitHeight="55.0" fitWidth="75.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="fileImage" fitHeight="55.0" fitWidth="75.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" >
                             <image>
                                 <Image url="file.png" />
                             </image>
@@ -66,7 +84,7 @@
 
             </items>
         </SplitPane>
-        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER" >
             <children>
                 <Label fx:id="imageStatus" maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
                     <font>

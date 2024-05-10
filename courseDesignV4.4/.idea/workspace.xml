@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0b8094e-ad22-4b5a-9058-95a9778266da" name="更改" comment="get local file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/component/Dialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sample/controller/NewWindowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/窗口.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/主窗口布局图.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/主窗口布局图.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/主窗口布局图.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +26,16 @@
     </option>
   </component>
   <component name="ProjectId" id="2daNKlJa6ou3ec2EMOrdJamPYNa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
@@ -109,6 +114,8 @@
       <workItem from="1715004944049" duration="1821000" />
       <workItem from="1715009962294" duration="10000" />
       <workItem from="1715078625293" duration="2183000" />
+      <workItem from="1715255386264" duration="51000" />
+      <workItem from="1715307342154" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="get local file">
       <created>1715078708514</created>
@@ -135,6 +142,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="get local file" />
     <option name="LAST_COMMIT_MESSAGE" value="get local file" />
   </component>
