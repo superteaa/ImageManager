@@ -15,11 +15,15 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+
+import com.google.gson.Gson;
+
 
 public class Dialog extends VBox {
     private Stage DialogStage;
     private static Dialog dialog;
-    private NewWindowController newWindowController;
+    private static NewWindowController newWindowController;
 
     static {
         try {
@@ -39,56 +43,6 @@ public class Dialog extends VBox {
         DialogStage.setResizable(false);
     }
 
-    /*
-    发送post请求
-     */
-    public StringBuilder GetPost() throws IOException {
-        String url = "http://175.178.24.103:3388/images/read";
-        HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
-        connection.setRequestMethod("POST");
-
-        // 设置为发送POST请求
-        connection.setDoOutput(true);
-        connection.setRequestProperty("Content-Type", "application/json");
-
-        // 构建JSON格式的请求体
-        /**
-         * username、password: 从页面读取用户输入
-         */
-        String username = newWindowController.usernameField.getText();
-//        String password = "chh";
-//        String jsonBody = "{\"username\": \"" + username + "\", \"password\": \"" + password + "\"}";
-
-        String jsonBody = "{\"username\": \"" + username + "\"}";
-        // 将JSON请求体写入输出流
-        try (DataOutputStream wr = new DataOutputStream(connection.getOutputStream())) {
-            byte[] data = jsonBody.getBytes(StandardCharsets.UTF_8);
-            wr.write(data);
-            wr.flush();
-        }
-
-        int responseCode = connection.getResponseCode();
-        if (responseCode == HttpURLConnection.HTTP_OK) {
-            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            String inputLine;
-            /**
-             * response: 服务器返回信息
-             */
-            StringBuilder response = new StringBuilder();
-            while ((inputLine = in.readLine()) != null) {
-                response.append(inputLine);
-            }
-            in.close();
-
-            return response;
-//            System.out.println("Server Response: " + response.toString());
-        } else {
-            System.out.println("HTTP request failed with response code: " + responseCode);
-            return null;
-        }
-    }
-
-
 
     public Stage getDialogStage() {
         return DialogStage;
@@ -97,7 +51,7 @@ public class Dialog extends VBox {
    /*
     * 展示登录窗口
     */
-    public static void showDialogWindow(){
+    public static void showDialogWindow() throws IOException {
         NewWindowController newWindowController = (NewWindowController) ControllerMap.get("NewWindowController");
         System.out.println("打开登录窗口");
         dialog.getDialogStage().show();

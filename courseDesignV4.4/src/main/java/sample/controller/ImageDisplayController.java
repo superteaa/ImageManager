@@ -29,6 +29,7 @@ import sample.map.ControllerMap;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 import java.util.ResourceBundle;
@@ -66,6 +67,9 @@ public class ImageDisplayController implements Initializable {
     private Timeline animation;
     private boolean isPlaying = false;
 
+    public boolean isWeb = false;
+
+
     public ImageDisplayController() throws IOException {
         ControllerMap.put(this);
     }
@@ -73,6 +77,7 @@ public class ImageDisplayController implements Initializable {
     private ImageView start;
     private ImageView end;
 
+    private ArrayList<String> urls;//接口返回的图片地址
 
     /**
      * 设置imageView的事件
@@ -189,6 +194,7 @@ public class ImageDisplayController implements Initializable {
      */
     public void init(String imagePath, List<ImageBean> imageBeanList) {
         this.imageBeanList = imageBeanList;
+        isWeb = false;
         for (int i = 0; i < imageBeanList.size(); i++) {
             if (imageBeanList.get(i).getPath().equals(imagePath)) {
                 index = i;
@@ -217,30 +223,77 @@ public class ImageDisplayController implements Initializable {
         imageView.getTransforms().clear();
     }
 
+    public void initWeb(String imagePath, ArrayList<String> urls){
+        this.urls=urls;
+        isWeb = true;
+        for (int i = 0; i < urls.size(); i++) {
+            if (urls.get(i).equals(imagePath)) {
+                index = i;
+                break;
+            }
+        }
+        setImageWeb(imagePath);
+    }
+
+    public void setImageWeb(String imagePath) {
+        image = new Image(imagePath);
+        imageView.setImage(image);
+        initImageView();
+        resetImage();
+    }
 
     public void slide() {
-        if (isPlaying) {
-            animation.stop();
-            slideButton.setGraphic(start);
-        } else {
-            init(imageBeanList.get(0).getPath(), imageBeanList);
-            animation.play();
-            slideButton.setGraphic(end);
+        if(!isWeb){
+            if (isPlaying) {
+                animation.stop();
+                slideButton.setGraphic(start);
+            } else {
+                init(imageBeanList.get(0).getPath(), imageBeanList);
+                animation.play();
+                slideButton.setGraphic(end);
+            }
+            isPlaying = !isPlaying;
         }
-        isPlaying = !isPlaying;
+        else {
+            if (isPlaying) {
+                animation.stop();
+                slideButton.setGraphic(start);
+            } else {
+                initWeb(urls.get(0),urls);
+                animation.play();
+                slideButton.setGraphic(end);
+            }
+            isPlaying = !isPlaying;
+        }
     }
 
     public void moveLeft(){
-        if (index >= 1) {
-            index--;
-            setImage(imageBeanList.get(index).getPath());
+        if(!isWeb) {
+            if (index >= 1) {
+                index--;
+                setImage(imageBeanList.get(index).getPath());
+            }
+        }
+        else{
+            if (index >= 1) {
+                index--;
+                setImageWeb(urls.get(index));
+            }
         }
     }
 
     public void moveRight(){
-        if (index < imageBeanList.size()-1) {
-            index++;
-            setImage(imageBeanList.get(index).getPath());
+        if(!isWeb) {
+            if (index < imageBeanList.size() - 1) {
+                index++;
+                setImage(imageBeanList.get(index).getPath());
+            }
+        }
+        else{
+            if(index < urls.size() - 1){
+                index++;
+                setImageWeb(urls.get(index));
+            }
         }
     }
 
@@ -253,6 +306,5 @@ public class ImageDisplayController implements Initializable {
         imageView.setScaleX(imageView.getScaleX() * 0.75);
         imageView.setScaleY(imageView.getScaleY() * 0.75);
     }
-
 
 }

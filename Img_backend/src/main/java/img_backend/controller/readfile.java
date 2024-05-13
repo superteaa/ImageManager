@@ -12,7 +12,7 @@ public class readfile {
 
     @PostMapping("/read")
     public List<String> readImageFiles(@RequestBody UserRequest userRequest) {
-        String baseUrl = "http://175.178.24.103:3388/pic/"; // 请替换<ip>和<port>为实际的IP地址和端口号
+        String baseUrl = "http://175.178.24.103:3388/pic/"; // <ip>和<port>为实际的IP地址和端口号
         Path directoryPath = Paths.get(System.getProperty("user.dir"), "/pic", userRequest.getUsername());
         List<String> imageFiles = new ArrayList<>();
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(directoryPath, "*.{jpg,png}")) {

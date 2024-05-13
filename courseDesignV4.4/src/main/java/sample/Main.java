@@ -25,7 +25,7 @@ public class Main extends Application {
         ControllerMap.put(fxmlLoader.getController());
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
-        primaryStage.setTitle("DarkRoom");
+        primaryStage.setTitle("展示窗口");
         System.out.println("打开预览窗口");
         primaryStage.show();
     }

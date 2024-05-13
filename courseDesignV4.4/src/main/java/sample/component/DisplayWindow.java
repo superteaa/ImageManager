@@ -11,6 +11,7 @@ import sample.controller.ImageDisplayController;
 import sample.map.ControllerMap;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -55,6 +56,13 @@ public class DisplayWindow extends VBox {
         imageDisplayController.init(curPath, imageBeanList);
         System.out.println("打开展示窗口");
         displayWindow.getImageStage().show(); // 显示页面
+    }
+
+    public static void showDisplayWindowWeb(String curPath, ArrayList<String> urls) {
+        ImageDisplayController imageDisplayController = (ImageDisplayController) ControllerMap.get("ImageDisplayController");
+        imageDisplayController.initWeb(curPath,urls);
+        System.out.println("打开网络展示窗口");
+        displayWindow.getImageStage().show(); // 点击登录按钮后了，显示页面
     }
 
 }

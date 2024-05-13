@@ -60,6 +60,7 @@ public class ThumbnailBox extends VBox {
         rightBtnMenu = RightBtnMenu.getRightBtnMenu();
         setAlignment(Pos.CENTER);
         setOnMousePressed(new EventHandler<MouseEvent>() {
+
             @Override
             public void handle(MouseEvent event) {
                 Controller controller = (Controller) ControllerMap.get("Controller");

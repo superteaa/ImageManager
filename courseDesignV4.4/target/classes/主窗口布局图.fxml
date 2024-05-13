@@ -1,45 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
     <children>
-        <MenuBar VBox.vgrow="NEVER">
-            <menus>
-                <Menu mnemonicParsing="false" text="关于">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="制作人员" onAction="#showInfo"/>
-                    </items>
-                </Menu>
-            </menus>
-        </MenuBar>
+
 
         <SplitPane orientation="VERTICAL" prefHeight="66.0" prefWidth="900.0">
             <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="73.0" prefWidth="898.0" style="-fx-background-color: LIGHTBLUE;">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="73.0" prefWidth="898.0" style="-fx-background-color: lightgray;">
                     <children>
-                        <TextField fx:id="imageLocation" layoutX="10.0" layoutY="21.0" prefWidth="550.0" text=""/>
+                        <TextField fx:id="imageLocation" layoutX="10.0" layoutY="21.0" prefWidth="550.0" text="" />
                         <ChoiceBox fx:id="sortBox" layoutX="566.0" layoutY="21.0" prefWidth="120.0" />
                         <Separator layoutX="690.0" layoutY="9.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="27.0" />
                         <Button layoutX="720.0" layoutY="10.0" mnemonicParsing="false" onAction="#ImageWeb" prefHeight="42.0" prefWidth="50.0">
                             <graphic>
-                                <ImageView fitHeight="20.0" fitWidth="20.0" >
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
                                     <image>
-                                        <Image url="disk.png"/>
+                                        <Image url="disk.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
                         </Button>
                         <Button layoutX="780.0" layoutY="10.0" mnemonicParsing="false" onAction="#ImageDelete" prefHeight="42.0" prefWidth="50.0">
                             <graphic>
-                                <ImageView fitHeight="20.0" fitWidth="20.0" >
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
                                     <image>
-                                        <Image url="dustbin.png"/>
+                                        <Image url="dustbin.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -49,9 +56,9 @@
                                 <Font name="AlienCaret" size="21.0" />
                             </font>
                             <graphic>
-                                <ImageView fitHeight="20.0" fitWidth="20.0" >
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
                                     <image>
-                                        <Image url="show.png"/>
+                                        <Image url="show.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -64,11 +71,11 @@
 
         <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" prefWidth="900.0" VBox.vgrow="ALWAYS">
             <items>
-                <AnchorPane prefWidth="221.0" >
+                <AnchorPane prefWidth="221.0" style="-fx-background-color: lightgray;">
                     <children>
-                        <TreeView fx:id="tv_fileTree" layoutX="-3.0" layoutY="88.0" prefHeight="399.0" prefWidth="230.0" />
+                        <TreeView fx:id="tv_fileTree" layoutX="-3.0" layoutY="97.0" prefHeight="390.0" prefWidth="230.0" />
                         <Separator layoutX="14.0" layoutY="77.0" prefWidth="200.0" />
-                        <ImageView fx:id="fileImage" fitHeight="55.0" fitWidth="75.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" >
+                        <ImageView fx:id="fileImage" fitHeight="70.0" fitWidth="80.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="file.png" />
                             </image>
@@ -78,23 +85,23 @@
 
                 <ScrollPane fx:id="scrollPane" prefHeight="357.0" prefWidth="351.0">
                     <content>
-                        <TilePane fx:id="thumbnails" prefColumns="3" prefHeight="474.0" prefTileWidth="200" prefWidth="624.0" />
+                        <TilePane fx:id="thumbnails" prefColumns="3" prefHeight="474.0" prefTileWidth="200" prefWidth="653.0" style="-fx-background-color: lightgray;" />
                     </content>
                 </ScrollPane>
 
             </items>
         </SplitPane>
-        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER" >
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
             <children>
                 <Label fx:id="imageStatus" maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
                     <font>
                         <Font size="11.0" fx:id="x3" />
                     </font>
                     <textFill>
-                        <Color red="0.625" green="0.625" blue="0.625" fx:id="x4" />
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
                     </textFill>
                 </Label>
-                <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+                <Pane prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: lightgray;" HBox.hgrow="ALWAYS" />
             </children>
             <padding>
                 <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />

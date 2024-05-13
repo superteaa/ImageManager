@@ -1,15 +1,10 @@
 package sample.bean;
 
 import sample.utils.ImageUtils;
-
 import java.awt.*;
 import java.io.File;
 
-/**
- * 得到一个文件夹中的图片后，将信息包装成bean
- * @author 12242
- * @date 2021/05/09
- */
+
 public class ImageBean {
     private File file;
     private String path;//绝对路径
@@ -17,6 +12,10 @@ public class ImageBean {
     private String imageSuffix;//后缀名
     private Long size;//大小（单位:byte）
     private Long lastModified;//最后修改时间（时间戳形式）
+
+    public StringBuilder http;
+
+
 
     public ImageBean(File file) {
         this.file = file;
@@ -26,6 +25,7 @@ public class ImageBean {
         this.size = file.length();
         this.lastModified = file.lastModified();
     }
+
 
     public File getFile() {
         return file;

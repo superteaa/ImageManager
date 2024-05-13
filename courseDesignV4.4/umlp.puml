@@ -1,0 +1,268 @@
+@startuml
+class sample.bean.Point {
++ double x
++ double y
+}
+
+class sample.utils.ImageUtils {
+- {static} SimpleDateFormat simpleDateFormat
++ {static} String getName(String)
++ {static} String getSuffix(String)
++ {static} double getSingleSizeByMetabyte(ImageBean)
++ {static} String getFormatDate(Long)
++ {static} void sortByLastModifiedTime(List<ImageBean>)
++ {static} void sortBySize(List<ImageBean>)
++ {static} void sortByName(List<ImageBean>)
+}
+
+
+class sample.component.Dialog {
+- Stage DialogStage
+- {static} Dialog dialog
+- {static} NewWindowController newWindowController
++ Stage getDialogStage()
++ {static} void showDialogWindow()
+}
+
+
+class sample.Main {
++ void start(Stage)
++ {static} void main(String[])
+}
+
+class sample.controller.Controller {
++ {static} File ROOT_FILE
+- TreeView<String> tv_fileTree
+- TilePane thumbnails
+- ScrollPane scrollPane
+- Label imageStatus
+- ChoiceBox sortBox
+- Pane pane
+- Rectangle rectangle
+- FileTreeItem selectedItem
+- SelectedObj selectedObj
+- List<ImageBean> imageBeanList
+- Point tilePaneMouseStart
+- Point tilePaneMouseDragged
+- ImageView fileImage
+- String path
++ TextField imageLocation
+- void initPath()
++ String getPath()
++ TilePane getThumbnails()
++ SelectedObj getSelectedObj()
++ void initialize(URL,ResourceBundle)
+- void initFileTree()
+- void initRectangle()
+- void initSortBox()
++ void sortImageBeanList(List<ImageBean>,int)
++ void showThumbnails()
++ void showImageStatus()
++ ChoiceBox getSortBox()
++ void imageDisplay()
++ void ImageDelete()
++ void ImageWeb()
+- void drawRectangle(Point,Point)
+- void initThumbnailPane()
++ void showInfo()
+}
+
+
+class sample.component.ThumbnailBox {
+- ImageBox imageBox
+- ImageBean imageBean
+- Label imageLabel
++ boolean isSelected
+- Tooltip tooltip
+- RightBtnMenu rightBtnMenu
++ ImageBox getImageBox()
++ Label getImageLabel()
++ ImageBean getImageBean()
++ boolean isSelected()
++ void setImageBean(ImageBean)
++ void setSelected(boolean)
++ void setImageLabel(Label)
++ void showImageDisplay(String)
++ void showImagePath()
++ void unshowImagePath()
+}
+
+
+class sample.controller.NewWindowController {
++ ArrayList<String> imageBeanList
+- ImageView imageView
++ int index
+- Image image
+- ArrayList<String> urls
++ TextField usernameField
++ TextField passwordField
++ void initialize(URL,ResourceBundle)
++ void initText()
++ void Login()
++ ArrayList<String> GetPost()
+}
+
+
+class sample.component.ImageBox {
+~ ImageView imageView
+}
+
+class sample.bean.ImageBean {
+- File file
+- String path
+- String imageName
+- String imageSuffix
+- Long size
+- Long lastModified
++ StringBuilder http
++ File getFile()
++ String getPath()
++ String getImageName()
++ String getImageSuffix()
++ Long getSize()
++ Long getLastModified()
+}
+
+
+class sample.controller.ImageDisplayController {
+- ImageView imageView
+- StackPane stackPane
+- Button slideButton
+- List<ImageBean> imageBeanList
+- int index
+- Image image
+- double[] lastPosition
+- Timeline animation
+- boolean isPlaying
++ boolean isWeb
+- ImageView start
+- ImageView end
+- ArrayList<String> urls
++ Timeline getAnimation()
++ void initialize(URL,ResourceBundle)
+- void initSlide()
+- void initImageView()
++ void init(String,List<ImageBean>)
++ void setImage(String)
+- void resetImage()
++ void initWeb(String,ArrayList<String>)
++ void setImageWeb(String)
++ void slide()
++ void moveLeft()
++ void moveRight()
++ void zoomIn()
++ void zoomOut()
+}
+
+
+class sample.component.RightBtnMenu {
+- {static} RightBtnMenu rightBtnMenu
++ {static} RightBtnMenu getRightBtnMenu()
+}
+
+
+class sample.bean.FileTreeItem {
+- boolean notInitialized
+- File file
+- Function<File,File[]> supplier
++ ObservableList<TreeItem<String>> getChildren()
++ boolean isLeaf()
++ File getFile()
+}
+
+
+class sample.component.DisplayWindow {
+- Stage imageStage
+- {static} DisplayWindow displayWindow
+- ImageDisplayController imageDisplayController
++ Stage getImageStage()
++ {static} void showDisplayWindow(String,List<ImageBean>)
++ {static} void showDisplayWindowWeb(String,ArrayList<String>)
+}
+
+
+class sample.bean.SelectedObj {
+- List<ThumbnailBox> thumbnailBoxList
+~ Controller controller
+- Stage stage
+- Integer num
+- Integer digit
+- String name
++ List<ThumbnailBox> getThumbnailBoxList()
++ void setThumbnailBoxList(List<ThumbnailBox>)
++ void refresh()
++ void select(ThumbnailBox)
++ void unselect(ThumbnailBox)
++ void delete()
++ void clear()
++ void rename()
++ List<File> copy()
+}
+
+
+class sample.utils.FileUtils {
++ {static} File[] getImageFileList(File)
++ {static} List<ImageBean> getImageBeanList(File[])
++ {static} List<ImageBean> getImageBeanList(File)
++ {static} boolean renameFile(File,String)
++ {static} int copyFileToDir(File,File)
+}
+
+class sample.map.ControllerMap {
+- {static} Map<String,Object> ctrlMap
++ {static} Map<String,Object> getCtrlMap()
++ {static} void put(Object)
++ {static} Object get(String)
+}
+
+
+class sample.component.AlertDialog {
++ {static} boolean getDialog(DialogType,String)
++ {static} boolean getDialog(DialogType)
+}
+
+enum sample.component.DialogType {
++  ConfirmDeletion
++  NumberFormat
++  EmptyFilename
++  RepeatedFilename
++  FileExist
++  FileNotFound
++  CopyFailure
++  CREW
+}
+
+class sample.bean.TreeViewNode {
++ DFSLevel dfsLevel
+- String path
+- File folder
++ String toString()
++ String getPath()
++ File getFolder()
+}
+
+
+enum sample.DFSLevel {
++  NONE
++  LOW
++  HIGH
+}
+
+class sample.utils.U {
++ {static} Canvas getFileIconToNode(File)
++ {static} String getFileName(File)
+}
+
+
+
+javafx.scene.layout.VBox <|-- sample.component.Dialog
+javafx.application.Application <|-- sample.Main
+javafx.fxml.Initializable <|.. sample.controller.Controller
+javafx.scene.layout.VBox <|-- sample.component.ThumbnailBox
+javafx.fxml.Initializable <|.. sample.controller.NewWindowController
+javafx.scene.layout.VBox <|-- sample.component.ImageBox
+javafx.fxml.Initializable <|.. sample.controller.ImageDisplayController
+javafx.scene.control.ContextMenu <|-- sample.component.RightBtnMenu
+javafx.scene.control.TreeItem <|-- sample.bean.FileTreeItem
+javafx.scene.layout.VBox <|-- sample.component.DisplayWindow
+@enduml

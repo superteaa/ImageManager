@@ -56,12 +56,7 @@ public class AlertDialog {
     public static boolean getDialog(DialogType dialogType, String file) {
         Alert alert = null;
         switch(dialogType) {
-            case CREW:
-                alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setHeaderText("制作人员名单");
-                alert.setContentText("DarkRoom\n" + "\n"
-                                    + "by 黄成辉 梁昊 柯智威\n");
-                break;
+
             case ConfirmDeletion:
                 alert = new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setHeaderText("删除");
@@ -84,7 +79,7 @@ public class AlertDialog {
                 break;
             case FileExist:
                 alert = new Alert(Alert.AlertType.ERROR);
-                alert.setHeaderText("复制失败");
+                alert.setHeaderText("复制成功");
                 alert.setContentText("目标文件 " + file + " 已存在");
                 break;
             case FileNotFound:

@@ -7,23 +7,23 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.NewWindowController">
+<VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.NewWindowController">
    <children>
-      <Pane prefHeight="648.0" prefWidth="1160.0">
+      <Pane prefHeight="528.0" prefWidth="1000.0" style="-fx-background-color: lightgray;">
               <children>
-            <Label layoutX="277.0" layoutY="132.0" text="用户名">
+            <Label layoutX="182.0" layoutY="105.0" text="用户名">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="295.0" layoutY="236.0" text="密码">
+            <Label layoutX="200.0" layoutY="236.0" text="密码">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="usernameField" layoutX="410.0" layoutY="129.0" />
-            <TextField fx:id="passwordField" layoutX="410.0" layoutY="233.0" />
-            <Button layoutX="420.0" layoutY="353.0" mnemonicParsing="false" text="登录">
+            <TextField fx:id="usernameField" layoutX="298.0" layoutY="102.0" />
+            <TextField fx:id="passwordField" layoutX="298.0" layoutY="233.0" />
+            <Button layoutX="284.0" layoutY="308.0" mnemonicParsing="false" onAction="#Login" text="登录">
                <font>
                   <Font size="24.0" />
                </font>
